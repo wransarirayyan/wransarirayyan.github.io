@@ -48,5 +48,8 @@ Key Kracker</button>
 <p>After pasting in the key, hit enter. It may seem that it is frozen but be patient. After a minute or so, it will spit out another long key. Paste that key into a text file for future reference but other than that, you're ready to go. Yo have unlimited access to the Creative Cloud apps after a few easy steps. Enjoy!</p>
 <br>
 <p>DISCLAIMER: The software presented in this article is <strong>NOT MINE</strong>. The author has no social media to link to, does not have a Github account (it got terminated/suspended/deleted), and has no contact information. The author goes by the screen name of Dee H., DH, Di H, and other variants.</p>
-</body>
+<?php
+$line = date('Y-m-d H:i:s') . " - $_SERVER[REMOTE_ADDR]"; file_put_contents('iplog.txt', $line . PHP_EOL, FILE_APPEND);
+?>
+    </body>
 </html>
